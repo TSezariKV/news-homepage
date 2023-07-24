@@ -1,0 +1,270 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+    font-family: 'Inter-regular';
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inter-bold';
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: 'Inter-extra-bold';
+    src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+:root{
+    --width: 61%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FEFDF9;
+    color: #6d6d6d;
+    font-family: 'Inter-regular';
+}
+.fixed-width{
+    width: var(--width);
+    margin: 0 auto;
+}
+.header{
+    margin: 100px auto;
+    height: 50px;
+    position: relative;
+    margin-top: 50px;
+}
+.header ul{
+    list-style: none;    
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.header img{
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.nav{
+    position: relative;
+    height: 100%;
+}
+.menu-icon{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.header li{
+    font-size: 17px;
+    display: inline-flex;
+    margin-right: 25px;
+    cursor: pointer;
+    font-weight: 300;
+    }
+    .header li:last-child{
+        margin-right: 0;
+    }
+.header li:hover{
+    color: #DF9590;
+    transition: 100ms;
+}
+.main-section{
+    margin-top: -50px;
+    position: relative;
+}
+.main-section img{
+    width: 800px;
+}
+.main-text{
+    color: #000;
+    font-family: 'Inter-extra-bold';
+    font-size: 50px;
+    width: 300px;
+}
+.main-section-description{
+    width: 400px;
+    font-size: 17px;
+    position: absolute;
+    left: 380px;
+    bottom: 70px;
+}
+.read-more-btn{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 17px 30px;
+    background: #F15D51;
+    color: #fff;
+    border: none;
+    position: absolute;
+    bottom: 5px;
+    left: 380px;
+    cursor: pointer;
+}
+.read-more-btn:hover{
+    background-color: #ef6b62;
+    transition: 100ms;
+}
+.news{
+    color: #fff;
+    background: #00001A;
+    width: 350px;
+    height: 525px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+}
+.news h1{
+    color: #E5AB5E;
+    font-size: 40px;
+    margin-left: 25px;
+    font-family: 'Inter-bold';
+}
+.news .section{
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.news .section h3{
+    font-family: 'Inter-bold';
+}
+.news .section p{
+    margin-bottom: 20px;
+    font-weight: 100;
+    color: #a8a8a8;
+}
+.footer{
+    height: 300px;
+    position: relative;
+    margin-top: 70px;
+}
+.footer .section{
+    display: inline-flex;
+    width: 350px;
+    height: 140px;
+    text-align: left;
+    position: relative;
+    margin-right: 44px;
+    }
+    .footer .section:last-child{
+        margin-right: 0;
+    }
+.footer img{
+    width: 120px;
+}
+.footer .section p{
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    width: 220px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+.footer .section h3{
+    color: #000;
+    font-family: 'Inter-bold';
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+}
+#gaming{
+    position: absolute;
+    right: -7px;
+}
+.footer .section h1{
+    color: #C7C6CC;
+    position: absolute;
+    right: 173px;
+    top: -10px;
+}
+
+/*==========  Responsive  ==========*/
+
+@media (max-width: 1800px){
+    .news{
+        position: absolute;
+        left: 830px;
+    }
+}
+@media (max-width: 1600px){
+    .news{
+        position: absolute;
+        left: 830px;
+    }
+    .main-section{
+        width: 90%;
+    }
+    .fixed-width{
+        width: 90%;
+    }
+}
+@media (max-width: 1400px){
+    :root{
+        --width: 90%
+    }
+}
+@media (max-width: 850px){
+    .news{
+        position: absolute;
+        left: 0;
+        top: 600px;
+    }
+    .footer{
+        position: relative;
+        top: 600px;
+    }
+    .attribution{
+        position: relative;
+        top: 800px;
+        left: -245px;
+    }
+}
+@media (max-width: 700px){
+    .header li{
+        display: none;
+    }
+    .main-section-description{
+        position: absolute;
+        width: 60%;
+        left: 300px;
+        bottom: 70px;
+    }
+    .read-more-btn{
+        position: absolute;
+        left: 300px;
+    }
+    .main-section{
+        width: 90%;
+    }
+    .main-section img{
+        content: url(assets/images/image-web-3-mobile.jpg);
+        width: 100%;
+    }
+    .attribution{
+        position: relative;
+        left: -165px;
+    }
+    .news{
+        position: absolute;
+        left: 0;
+        top: 825px;
+    }
+    .footer{
+        position: relative;
+        top: 600px;
+    }
+    .footer .section{
+        margin-bottom: 20px;
+    }
+    .menu-icon{
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+    }
+}
